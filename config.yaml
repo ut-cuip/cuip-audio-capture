@@ -1,0 +1,7 @@
+cameras:
+  - url: "rtsp://root:2u9JRlI#h6Ul@mlk-douglas-cam-3.research.utc.edu/axis-media/media.amp?videocodec=h264"
+    camera_id: "mlk-peeples-cam-3"
+    pole-id: "mlk-peeples-3"
+    intersection: False
+    requires-auth: True 
+
