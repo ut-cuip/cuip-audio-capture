@@ -1,7 +1,21 @@
+kafka:
+  bootstrap_servers:
+    - sckafka1.simcenter.utc.edu:9092
+    - sckafka2.simcenter.utc.edu:9092
+    - sckafka3.simcenter.utc.edu:9092
+  topic: MLK_AUDIO_EVENTS       
+  
 cameras:
-  - url: "rtsp://root:2u9JRlI#h6Ul@mlk-douglas-cam-3.research.utc.edu/axis-media/media.amp?videocodec=h264"
+  - url: "rtsp://root:2u9JRlI#h6Ul@mlk-douglas-cam-3.research.utc.edu"
+    camera_id: "mlk-douglas"
+    pole-id: "mlk-douglas-1"
+    intersection: False
+    file-name: douglas-audio
+    nicename: mlk-douglas 
+  - url: "rtsp://root:2u9JRlI#h6Ul@10.199.51.162"
     camera_id: "mlk-peeples-cam-3"
     pole-id: "mlk-peeples-3"
     intersection: False
-    requires-auth: True 
-
+    file-name: peeples-audio
+    nicename: mlk-peeples
+    
