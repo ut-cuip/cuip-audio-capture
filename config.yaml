@@ -9,7 +9,7 @@ cameras:
   - url: "rtsp://root:2u9JRlI#h6Ul@mlk-douglas-cam-3.research.utc.edu"
     camera_id: "mlk-douglas"
     pole-id: "mlk-douglas-1"
-    intersection: False
+    intersection: True
     file-name: douglas-audio
     nicename: mlk-douglas 
   - url: "rtsp://root:2u9JRlI#h6Ul@10.199.51.162"
@@ -19,10 +19,17 @@ cameras:
     file-name: peeples-audio
     nicename: mlk-peeples
   - url: "rtsp://root:2u9JRlI#h6Ul@10.199.51.170"
-    camera_id: "mlk-peeples-cam-3"
-    pole-id: "mlk-peeples-3"
-    intersection: False
-    file-name: peeples-audio
-    nicename: mlk-peeples
+    camera_id: "mlk-central-cam-3"
+    pole-id: "mlk-central-3"
+    intersection: True
+    file-name: central-audio
+    nicename: mlk-central
+  - url: "rtsp://root:2u9JRlI#h6Ul@10.199.51.225"
+    camera_id: "mlk-houston-cam-3"
+    pole-id: "mlk-houston-3"
+    intersection: True
+    file-name: houston-audio
+    nicename: mlk-houston
+
 
     
