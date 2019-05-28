@@ -25,7 +25,7 @@ def main():
     
     processes = []
     for i in range(len(config["cameras"])):
-        processes.append(Process(target=run, args=(str(config["cameras"][i]["url"]), str(config["cameras"][i]["file-name"]), lock, str(config["kafka"]["topic"]) )))
+        processes.append(Process(target=run, args=(str(config["cameras"][i]["url"]), str(config["cameras"][i]["file-name"]), lock, config)))
 
     try:
         for process in processes:
@@ -85,10 +85,10 @@ def produce(topic, prediction):
             print(st)
             #print(ts) 
             audio_event = {}
+            audio_event['timestamp'] = get_timestamp()
             #audio_event['camera_id'] = 
             #audio_event['intersection'] = 
             #audio_event['pole_id'] = 
-            #audio_event['timestamp'] = 
     except ValueError:
         print("Error loading JSON")
 

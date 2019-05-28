@@ -18,4 +18,11 @@ cameras:
     intersection: False
     file-name: peeples-audio
     nicename: mlk-peeples
+  - url: "rtsp://root:2u9JRlI#h6Ul@10.199.51.170"
+    camera_id: "mlk-peeples-cam-3"
+    pole-id: "mlk-peeples-3"
+    intersection: False
+    file-name: peeples-audio
+    nicename: mlk-peeples
+
     
